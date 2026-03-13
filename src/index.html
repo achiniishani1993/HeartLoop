@@ -5,53 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeartLoop</title>
 
-   <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-   <script src="/src/bootstrap.bundle.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+ <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+   <link rel="stylesheet" href="main.css" />
+
+   <script src="bootstrap.bundle.min.js"></script>
 
 </head>
 <body> 
-  <div class="container">
-   <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Accordion Item #1
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Accordion Item #2
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Accordion Item #3
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+ <nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+     <img src="/Images/logo.png" alt="Logo" width="35" height="35" class="me-2">
+      <span class="brand-text">HeartLoop</span></a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto" >
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Why the HeartLoop</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Safety
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Safety Tips</a></li>
+            <li><a class="dropdown-item" href="#">Safety & Policy</a></li>
+            <li><a class="dropdown-item" href="#">Security</a></li>
+          </ul>
+        </li>
 
+         <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="d-flex align-items-center justify-content-center text-center">
+  <div class="container bg-white p-5">
+    
+    <h1>Meet your true Soulmate</h1>
+    <h6>Become a member for free</h6>
+
+    <div class="box__member">
+      <form class="d-flex flex-column gap-3">
+
+        <button type="submit" class="btn btn-light">
+          <i class="fa-brands fa-google text-warning me-2"></i> Sign in with Google
+        </button>
+
+        <button type="submit" class="btn btn-light">
+          <i class="fa-brands fa-apple me-2"></i> Continue with Apple
+        </button>
+
+        <select name="gender" id="sex" class="form-select" required>
+          <option>Select your Gender</option>
+          <option>Female</option>
+          <option>Male</option>
+          <option>Other</option>
+        </select>
+
+        <input type="text" class="form-control" placeholder="Enter your age" required/>
+
+        <div class="form-check text-start">
+          <input class="form-check-input" type="checkbox" id="member">
+          <label class="form-check-label" for="member">
+            By clicking "Continue", I agree to the HeartLoop membership terms & privacy policy.
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-danger">Continue</button>
+
+      </form>
+    </div>
+
+  </div>
+</header>
+<main>
+
+</main>
 
 </body>
 </html>

@@ -6,3 +6,24 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+.brand-text{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.container{
+    max-width: 500px;
+    margin: auto;
+}
+
+header{
+    background-image: url("/Images/couple.jpg"); /* your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
